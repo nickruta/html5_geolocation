@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nick Ruta's Geolocation Practice Session</title>
+	<script src="myLoc.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<link rel="stylesheet" href="myLoc.css">
+</head>
+<body>
+	<p>This HTML5 Geolocation Practice session includes the Google Maps API. I created this after reading a book on HTML5. I am originally from New York and thought it would be interesting to track the direct distance between the location of my mobile device and Times Square, New York City. This web application uses the geolocation API of HTML5.</p>
+	<p>If you press "Watch Me" from you desktop/laptop computer, the location information will likely be based on your IP address. This will probably be accurate to the city or neighborhood level since IP address's are resolved to locations like an ISP local office.</p>
+	<p>It is more fun to access this page from your mobile device. Press "Watch Me" and move a certain distance, preferably in a car or by bike. By using the 'timeout' and 'maximumAge' options of the geolocation API, we can track almost every movement of the mobile device. You will see a track of Google 'markers' setting the history of your path.</p> 
+	
+	<p>The coordinates of the device used to click "Watch me" will also calculate your distance to Times Square, New York City!</p>
+	
+	<form>
+		<input type="button" id="watch" value="Watch me">
+		<input type="button" id="clearWatch" value="Clear watch">
+	</form>
+	<div id="location">
+		Your location will go here.
+	</div>
+	<div id="distance">
+		Distance from Times Square will go here.
+	</div>
+	<div id="map">
+	</div>
+	
+</body>
+</html>
